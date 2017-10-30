@@ -1,0 +1,22 @@
+This repository includes test samples and experiments which are presented in the paper "Shams, Hesam, and Nasser Salmasi. "Parallel machine scheduling problem with preemptive jobs and transportation delay." Computers & Operations Research 50 (2014): 14-23.".
+
+The instances are classified as follows:
+
+Number of machines:
+test problems by considering the number of machines in parallel are generated in three different levels. In the first level, called Machine1, problems with 2–5 machines in parallel are considered. In the second level, called Machine2, problems with 6–10 machines in parallel are considered and finally, in the third level called Machine3, problems with 11–15 machines in parallel are generated.
+
+Number of jobs:
+the number of jobs is considered between 2 and 100. The value of this parameter is generated randomly in three different levels, using the uniform discrete distribution. If the problem has the number of jobs in the interval of [2, 20] (Job1), the problem is considered in the first level based on the number of jobs factor. The problem is considered in the second and the third level based on the number of jobs factor if its number of jobs is in the interval of [21, 50] (Job2) and [51, 100] (Job3), respectively.
+
+Processing time of jobs:
+test problems are generated in three different levels based on their processing time. In the first level, the processing time of jobs are generated randomly from a discrete uniform distribution in the interval of DU [1, 10] (PT1). In the second level, the processing time of jobs are generated randomly from a discrete uniform distribution in the interval of DU [1, 40] (PT2) and finally, in the third level, the processing time of jobs are generated randomly from a discrete uniform distribution in the interval of DU [1, 90] (PT3).
+
+
+
+Based on these classifications, 27 different classes of test problems (3 for the number of machines×3 for the number of jobs×3 for the processing times) are generated. For each class of test problems, 10 instances (i.e., 270 random test problems in total) are generated randomly to be solved by Model 1 and Algorithm 1.
+
+Based on literature, the Pm|pmtn(delay=t)|Cmax problem instances might be easy or strongly NP-hard problems. In this research the test problems are generated in the range of NP-hard instances. The calculation is explained in "Shams, Hesam, and Nasser Salmasi. "Parallel machine scheduling problem with preemptive jobs and transportation delay." Computers & Operations Research 50 (2014): 14-23".
+
+The Model 1 (Model1.cpp) and Algorithm 1 (Algorithm1.cpp) are coded in c++ with CPLEX 12 and the solutions exist in the related folders.
+
+The detailed results for the paper is shown in Report.xls file.
